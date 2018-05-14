@@ -96,5 +96,18 @@ namespace CoiniumServ.Server.Mining.Stratum
             var context = (StratumContext)JsonRpcContext.Current().Value;
             return _shareManager.ProcessShare(context.Miner, jobId, extraNonce2, nTime, nonce).IsValid;
         }
+                
+        [JsonRpcMethod("mining.multi_version")]
+        public void MiningMultiVersion()
+        {
+            // do nothing;
+        }
+        
+        [JsonRpcMethod("mining.extranonce.subscribe")]
+        public void MiningExtraonceSubscrube()
+        {
+            // do nothing;
+        }
+        
     }
 }
