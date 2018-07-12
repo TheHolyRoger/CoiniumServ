@@ -1,0 +1,15 @@
+{
+    "name": "TheHolyRogerCoin",
+    "symbol": "ROGER",
+    "algorithm": "scrypt",
+    "site": "https://theholyroger.com/",
+    "blockExplorer": {
+        "block": "https://explorer.theholyroger.com/block/",
+        "tx": "https://explorer.theholyroger.com/tx/",
+        "address": "https://explorer.theholyroger.com/address/"
+    },
+    "node": {
+        "magic": "fcc2c4eb",
+        "testnetMagic": "fcc1b7dc"
+    }
+}
