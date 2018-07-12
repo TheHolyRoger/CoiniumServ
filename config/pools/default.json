@@ -1,2 +1,53 @@
 {
+
+    "enabled": false,  
+
+    "coin": "theholyrogercoin.json",    
+
+    "meta": {
+        "motd": "Welcome to TheHolyRoger pool, enjoy your stay! - https://mining.theholyroger.com",
+        "txMessage": "https://mining.theholyroger.com/"
+     },
+
+    "payments": {
+        "enabled": true,
+        "interval": 120,
+        "minimum": 0.01
+    },
+
+    "miner":  {
+        "validateUsername": true,
+        "timeout": 300
+    },
+
+    "job":  {
+        "blockRefreshInterval": 1000,
+        "rebroadcastTimeout": 55        
+    },
+    "stratum": {
+        "enabled": true,
+        "bind": "0.0.0.0",
+        "port": 3333,
+        "diff": 16,
+        "vardiff": {
+            "enabled": true,
+            "minDiff": 16,
+            "maxDiff": 4096,
+            "targetTime": 15,
+            "retargetTime": 90,
+            "variancePercent": 70
+        }
+    },
+    "banning": {
+        "enabled": true,
+        "duration": 600,
+        "invalidPercent": 50,
+        "checkThreshold": 100,
+        "purgeInterval": 300
+    },
+    "vanilla": {
+        "enabled": false,
+        "bind": "localhost",
+        "port": 2223
+    }
 }
